@@ -1,9 +1,9 @@
 package com.jshin47.jtdc.client
 
-import com.jshin47.jtdc.client.module.post.PostListC
-import com.jshin47.jtdc.client.state.{ApplicationCircuit, PostFilter}
-import japgolly.scalajs.react.{ReactComponentU, TopNode}
-import japgolly.scalajs.react.extra.router.{BaseUrl, Redirect, Resolution, Router, RouterConfig, RouterConfigDsl}
+import japgolly.scalajs.react.extra.router._
+import japgolly.scalajs.react._
+import japgolly.scalajs.react.vdom.prefix_<^._
+import com.jshin47.jtdc.client.module.landing.LandingLocC
 import org.scalajs.dom
 
 
@@ -11,22 +11,22 @@ object ApplicationRouter {
 
   val baseUrl = BaseUrl(dom.window.location.href.takeWhile(_ != '#))
 
-  val routerConfig: RouterConfig[PostFilter] = RouterConfigDsl[PostFilter].buildConfig { dsl ⇒
+  val routerConfig: RouterConfig[Loc] = RouterConfigDsl[Loc].buildConfig { dsl ⇒
     import dsl._
 
-    def filterRoute(s: PostFilter): Rule =
-      staticRoute("#/" + s.link, s) ~>
-        renderR(router ⇒
-          ApplicationCircuit
-            .connect(_.posts)(p ⇒ PostListC(p, s, router)))
+    (staticRoute(root, LandingLoc) ~> renderR(ctl ⇒ LandingLocC(ctl)))
+      .notFound(redirectToPage(LandingLoc)(Redirect.Replace))
 
-    def filterRoutes: Rule =
-      PostFilter.values.map(filterRoute).reduce(_ | _)
-
-    filterRoutes.notFound(redirectToPage(PostFilter.All)(Redirect.Replace))
   }
 
-  val router: ReactComponentU[Unit, Resolution[PostFilter], Any, TopNode] = Router(baseUrl, routerConfig.logToConsole)()
+  def layout(c: RouterCtl[Loc], r: Resolution[Loc]): Unit = {
+    <.div(
+      r.render()
+    )
+  }
+
+  val router: ReactComponentU[Unit, Resolution[Loc], Any, TopNode] =
+    Router(baseUrl, routerConfig.logToConsole)()
 
   def apply() = router
 }

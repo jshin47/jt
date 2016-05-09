@@ -1,5 +1,6 @@
-package com.jshin47.jtdc.client.state
+package com.jshin47.jtdc.client.state.handler
 
+import com.jshin47.jtdc.client.state.{AddPost, DeletePost, InitializePosts, UpdatePost}
 import com.jshin47.jtdc.dto.{Post, PostId}
 import diode.{ActionHandler, ActionResult, ModelRW}
 
@@ -24,6 +25,5 @@ class PostHandler[M](modelRW: ModelRW[M, Seq[Post]]) extends ActionHandler(model
       updated(updateOne(id)(old ⇒ old.copy(title = maybeTitle.getOrElse(old.title), content = maybeContent.getOrElse(old.content))))
     case DeletePost(id) ⇒
       updated(value.filterNot(_.id == id))
-    case _ => updated(value)
   }
 }
