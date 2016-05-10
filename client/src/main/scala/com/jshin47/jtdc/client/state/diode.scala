@@ -10,4 +10,4 @@ case class DiodeDebugDispatch(action: AnyRef, msg: String = "") extends DiodeDeb
 case class DiodeDebugActionResult(action: AnyRef, msg: String = "") extends DiodeDebugLifecycleAction
 
 case class LogDiode(log: String) extends DiodeDebugAction
-case class SplashDiode(log: 1String, effect: DiodeSplashEffect = ToolipSplash) extends DiodeDebugAction
+case class SplashDiode(log: String, effect: DiodeSplashEffect = ToolipSplash) extends DiodeDebugAction
