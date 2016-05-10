@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
+    "d3-state-visualizer": "^1.1.0",
     "dayz": "^0.6.3",
     "elemental": "v0.5.4",
     "highlight.js": "8.9.1",
@@ -56,6 +57,7 @@
     "react-swipe-views": "0.0.12",
     "react-tagsinput": "^3.0.3",
     "react-tap-event-plugin": "^0.2.1",
+    "react2tree": "^1.2.0",
     "svg-loader": "0.0.2"
   }
 }

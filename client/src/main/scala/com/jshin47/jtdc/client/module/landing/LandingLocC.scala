@@ -11,6 +11,7 @@ import org.scalajs.dom.ext.KeyCode
 import chandu0101.scalajs.react.components.Implicits._
 import com.jshin47.jtdc.client.Loc
 import com.jshin47.jtdc.client.component.masthead.MastheadC
+import com.jshin47.jtdc.client.module.visualization.{D3TreeStateVisualizerC, DiodeStateVizC}
 
 import scalacss.ScalaCssReact._
 
@@ -19,7 +20,8 @@ object LandingLocC {
   private val component = ReactComponentB[RouterCtl[Loc]]("LandingLocation")
     .render_P(ctl ⇒ {
       <.div()(
-        ApplicationCircuit.connect(_.masthead)(proxy ⇒ MastheadC(MastheadC.Props(proxy))())
+        ApplicationCircuit.connect(_.masthead)(proxy ⇒ MastheadC(MastheadC.Props(proxy))()),
+        ApplicationCircuit.connect(m ⇒ m)(proxy ⇒ DiodeStateVizC(DiodeStateVizC.Props(proxy)))
       )
     })
     .build

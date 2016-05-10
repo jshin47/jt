@@ -14,16 +14,21 @@ import boopickle.Default._
 
 import scala.scalajs.js.JSApp
 import com.jshin47.jtdc.client.state.{ApplicationCircuit, ApplicationModel, InitializePosts}
+import com.jshin47.jtdc.client.style.{ApplicationStyles, StyleRegistry}
 
 
 object Main extends JSApp {
 
   @JSExport
   override def main(): Unit = {
+    // Styling bullshit
     GlobalRegistry.addToDocumentOnRegistration()
+    StyleRegistry.load()
 
+    // Init
     ApplicationCircuit.dispatch(InitializePosts)
 
+    // Render into new child div of body. Could've rendered right into body but didn't.
     ReactDOM.render(ApplicationRouter(), dom.document.body.appendChild(dom.document.createElement("div")))
   }
 

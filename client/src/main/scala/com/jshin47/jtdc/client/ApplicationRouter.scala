@@ -9,6 +9,7 @@ import org.scalajs.dom
 
 object ApplicationRouter {
 
+  // Rationale being, this is the url prior to the anchor, which the browser will not send to the server.
   val baseUrl = BaseUrl(dom.window.location.href.takeWhile(_ != '#))
 
   val routerConfig: RouterConfig[Loc] = RouterConfigDsl[Loc].buildConfig { dsl ⇒
