@@ -3,15 +3,15 @@ webpackJsonp([8],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	var ReactTagsInput = __webpack_require__(1616);
+	var ReactTagsInput = __webpack_require__(1620);
 
-	__webpack_require__(1617);
+	__webpack_require__(1621);
 
 	window.ReactTagsInput = ReactTagsInput;
 
 /***/ },
 
-/***/ 1616:
+/***/ 1620:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
@@ -359,13 +359,13 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 1617:
+/***/ 1621:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(1618);
+	var content = __webpack_require__(1622);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(267)(content, {});
@@ -386,7 +386,7 @@ webpackJsonp([8],{
 
 /***/ },
 
-/***/ 1618:
+/***/ 1622:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(266)();

@@ -28,6 +28,7 @@
     "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
+    "arsenic": "^0.1.0",
     "bootstrap-sass": "^3.3.6",
     "d3-state-visualizer": "^1.1.0",
     "dayz": "^0.6.3",
@@ -50,6 +51,7 @@
     "react-geomicons": "^2.0.4",
     "react-infinite": "^0.7.1",
     "react-mt-svg-lines": "^0.4.5",
+    "react-parallax": "^0.4.3",
     "react-select": "^1.0.0-beta",
     "react-simple-parallax": "^0.2.6",
     "react-slick": "^0.9.3",
@@ -59,6 +61,9 @@
     "react-tagsinput": "^3.0.3",
     "react-tap-event-plugin": "^0.2.1",
     "react2tree": "^1.2.0",
+    "skrollr": "^0.6.26",
+    "skrollr-colors": "^1.1.0",
+    "skrollr-stylesheets": "^1.0.0",
     "svg-loader": "0.0.2"
   }
 }

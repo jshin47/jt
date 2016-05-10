@@ -10,6 +10,10 @@ window.TreeSvg = require('d3-state-visualizer');
 window.react2tree = require('react2tree');
 window.Cellblock = require('react-cellblock');
 window.ReactSticky = require('react-sticky');
+window.Arsenic = require('arsenic');
+window.ReactParallax = require('react-parallax');
+window.skrollr = require('skrollr');
+window.skrollrss = require('skrollr-stylesheets');
 
 window.mui.SvgIcons = require('material-ui/lib/svg-icons/index');
 window.Bootstrap = require('bootstrap-sass');

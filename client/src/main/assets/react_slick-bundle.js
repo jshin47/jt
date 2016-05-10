@@ -3,7 +3,7 @@ webpackJsonp([6],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	var ReactSlick = __webpack_require__(1595);
+	var ReactSlick = __webpack_require__(1599);
 
 	//require('react-spinner/react-spinner.css')
 
@@ -11,16 +11,16 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1595:
+/***/ 1599:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	module.exports = __webpack_require__(1596);
+	module.exports = __webpack_require__(1600);
 
 /***/ },
 
-/***/ 1596:
+/***/ 1600:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31,21 +31,21 @@ webpackJsonp([6],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _innerSlider = __webpack_require__(1597);
+	var _innerSlider = __webpack_require__(1601);
 
-	var _objectAssign = __webpack_require__(1601);
+	var _objectAssign = __webpack_require__(1605);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _json2mq = __webpack_require__(1608);
+	var _json2mq = __webpack_require__(1612);
 
 	var _json2mq2 = _interopRequireDefault(_json2mq);
 
-	var _reactResponsiveMixin = __webpack_require__(1610);
+	var _reactResponsiveMixin = __webpack_require__(1614);
 
 	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
 
-	var _defaultProps = __webpack_require__(1604);
+	var _defaultProps = __webpack_require__(1608);
 
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 
@@ -123,7 +123,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1597:
+/***/ 1601:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -140,19 +140,19 @@ webpackJsonp([6],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mixinsEventHandlers = __webpack_require__(1598);
+	var _mixinsEventHandlers = __webpack_require__(1602);
 
 	var _mixinsEventHandlers2 = _interopRequireDefault(_mixinsEventHandlers);
 
-	var _mixinsHelpers = __webpack_require__(1602);
+	var _mixinsHelpers = __webpack_require__(1606);
 
 	var _mixinsHelpers2 = _interopRequireDefault(_mixinsHelpers);
 
-	var _initialState = __webpack_require__(1603);
+	var _initialState = __webpack_require__(1607);
 
 	var _initialState2 = _interopRequireDefault(_initialState);
 
-	var _defaultProps = __webpack_require__(1604);
+	var _defaultProps = __webpack_require__(1608);
 
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 
@@ -160,11 +160,11 @@ webpackJsonp([6],{
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _track = __webpack_require__(1605);
+	var _track = __webpack_require__(1609);
 
-	var _dots = __webpack_require__(1606);
+	var _dots = __webpack_require__(1610);
 
-	var _arrows = __webpack_require__(1607);
+	var _arrows = __webpack_require__(1611);
 
 	var InnerSlider = _react2['default'].createClass({
 	  displayName: 'InnerSlider',
@@ -313,7 +313,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1598:
+/***/ 1602:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -323,9 +323,9 @@ webpackJsonp([6],{
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _trackHelper = __webpack_require__(1599);
+	var _trackHelper = __webpack_require__(1603);
 
-	var _objectAssign = __webpack_require__(1601);
+	var _objectAssign = __webpack_require__(1605);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -480,7 +480,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1599:
+/***/ 1603:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
@@ -490,7 +490,7 @@ webpackJsonp([6],{
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _ReactDOM = __webpack_require__(1600);
+	var _ReactDOM = __webpack_require__(1604);
 
 	var _ReactDOM2 = _interopRequireDefault(_ReactDOM);
 
@@ -608,7 +608,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1600:
+/***/ 1604:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -634,7 +634,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1601:
+/***/ 1605:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -667,7 +667,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1602:
+/***/ 1606:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -682,7 +682,7 @@ webpackJsonp([6],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ReactDOM = __webpack_require__(1600);
+	var _ReactDOM = __webpack_require__(1604);
 
 	var _ReactDOM2 = _interopRequireDefault(_ReactDOM);
 
@@ -690,9 +690,9 @@ webpackJsonp([6],{
 
 	var _reactLibReactTransitionEvents2 = _interopRequireDefault(_reactLibReactTransitionEvents);
 
-	var _trackHelper = __webpack_require__(1599);
+	var _trackHelper = __webpack_require__(1603);
 
-	var _objectAssign = __webpack_require__(1601);
+	var _objectAssign = __webpack_require__(1605);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -958,7 +958,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1603:
+/***/ 1607:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1009,7 +1009,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1604:
+/***/ 1608:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1062,7 +1062,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1605:
+/***/ 1609:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
@@ -1077,7 +1077,7 @@ webpackJsonp([6],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _objectAssign = __webpack_require__(1601);
+	var _objectAssign = __webpack_require__(1605);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
@@ -1213,7 +1213,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1606:
+/***/ 1610:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1293,7 +1293,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1607:
+/***/ 1611:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1411,10 +1411,10 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1608:
+/***/ 1612:
 /***/ function(module, exports, __webpack_require__) {
 
-	var camel2hyphen = __webpack_require__(1609);
+	var camel2hyphen = __webpack_require__(1613);
 
 	var isDimension = function (feature) {
 	  var re = /[height|width]$/;
@@ -1468,7 +1468,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1609:
+/***/ 1613:
 /***/ function(module, exports) {
 
 	var camel2hyphen = function (str) {
@@ -1483,12 +1483,12 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1610:
+/***/ 1614:
 /***/ function(module, exports, __webpack_require__) {
 
-	var canUseDOM = __webpack_require__(1611);
-	var enquire = canUseDOM && __webpack_require__(1612);
-	var json2mq = __webpack_require__(1608);
+	var canUseDOM = __webpack_require__(1615);
+	var enquire = canUseDOM && __webpack_require__(1616);
+	var json2mq = __webpack_require__(1612);
 
 	var ResponsiveMixin = {
 	  media: function (query, handler) {
@@ -1519,7 +1519,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1611:
+/***/ 1615:
 /***/ function(module, exports) {
 
 	var canUseDOM = !!(
@@ -1532,7 +1532,7 @@ webpackJsonp([6],{
 
 /***/ },
 
-/***/ 1612:
+/***/ 1616:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!

@@ -3,15 +3,15 @@ webpackJsonp([7],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	var Spinner = __webpack_require__(1613);
+	var Spinner = __webpack_require__(1617);
 
-	__webpack_require__(1614)
+	__webpack_require__(1618)
 
 	window.Spinner = Spinner;
 
 /***/ },
 
-/***/ 1613:
+/***/ 1617:
 /***/ function(module, exports, __webpack_require__) {
 
 	(function webpackUniversalModuleDefinition(root, factory) {
@@ -125,13 +125,13 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 1614:
+/***/ 1618:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(1615);
+	var content = __webpack_require__(1619);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(267)(content, {});
@@ -152,7 +152,7 @@ webpackJsonp([7],{
 
 /***/ },
 
-/***/ 1615:
+/***/ 1619:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(266)();

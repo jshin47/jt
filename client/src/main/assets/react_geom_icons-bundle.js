@@ -3,14 +3,14 @@ webpackJsonp([3],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	var ReactGeomIcon = __webpack_require__(1574);
+	var ReactGeomIcon = __webpack_require__(1578);
 
 
 	window.ReactGeomIcon = ReactGeomIcon;
 
 /***/ },
 
-/***/ 1574:
+/***/ 1578:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -18,7 +18,7 @@ webpackJsonp([3],{
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	var React = __webpack_require__(55);
-	var paths = __webpack_require__(1575);
+	var paths = __webpack_require__(1579);
 
 	var Icon = React.createClass({
 	  displayName: 'Icon',
@@ -49,7 +49,7 @@ webpackJsonp([3],{
 
 /***/ },
 
-/***/ 1575:
+/***/ 1579:
 /***/ function(module, exports) {
 
 	module.exports = {
