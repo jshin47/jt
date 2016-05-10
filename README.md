@@ -9,4 +9,4 @@ Instructions to build
   5. `sbt`
   7. In `sbt`, `server/reStart`
   
-![logo](https://raw.githubusercontent.com/jshin47/jt/master/screenshot1.png)
+![logo](https://raw.githubusercontent.com/jshin47/jt/master/screenshot2.png)
