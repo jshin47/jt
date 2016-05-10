@@ -3,14 +3,14 @@ webpackJsonp([4],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	var Infinite = __webpack_require__(1533);
+	var Infinite = __webpack_require__(1576);
 
 
 	window.Infinite = Infinite;
 
 /***/ },
 
-/***/ 1533:
+/***/ 1576:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, console) {'use strict';
@@ -20,13 +20,13 @@ webpackJsonp([4],{
 	var React = global.React || __webpack_require__(55);
 	var ReactDOM = global.ReactDOM || __webpack_require__(251);
 
-	__webpack_require__(1534);
-	var scaleEnum = __webpack_require__(1535);
-	var infiniteHelpers = __webpack_require__(1536);
-	var _isFinite = __webpack_require__(1541);
+	__webpack_require__(1577);
+	var scaleEnum = __webpack_require__(1578);
+	var infiniteHelpers = __webpack_require__(1579);
+	var _isFinite = __webpack_require__(1584);
 
-	var preloadType = __webpack_require__(1542).preloadType;
-	var checkProps = checkProps = __webpack_require__(1543);
+	var preloadType = __webpack_require__(1585).preloadType;
+	var checkProps = checkProps = __webpack_require__(1586);
 
 	var Infinite = React.createClass({
 	  displayName: 'Infinite',
@@ -447,7 +447,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1534:
+/***/ 1577:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -469,7 +469,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1535:
+/***/ 1578:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -480,13 +480,13 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1536:
+/***/ 1579:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
 
-	var ConstantInfiniteComputer = __webpack_require__(1537);
-	var ArrayInfiniteComputer = __webpack_require__(1539);
+	var ConstantInfiniteComputer = __webpack_require__(1580);
+	var ArrayInfiniteComputer = __webpack_require__(1582);
 	var React = global.React || __webpack_require__(55);
 
 	function createInfiniteComputer(data, children) {
@@ -533,7 +533,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1537:
+/***/ 1580:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -546,7 +546,7 @@ webpackJsonp([4],{
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var InfiniteComputer = __webpack_require__(1538);
+	var InfiniteComputer = __webpack_require__(1581);
 
 	var ConstantInfiniteComputer = (function (_InfiniteComputer) {
 	  _inherits(ConstantInfiniteComputer, _InfiniteComputer);
@@ -596,7 +596,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1538:
+/***/ 1581:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {// An infinite computer must be able to do the following things:
@@ -677,7 +677,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1539:
+/***/ 1582:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -690,8 +690,8 @@ webpackJsonp([4],{
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var InfiniteComputer = __webpack_require__(1538),
-	    bs = __webpack_require__(1540);
+	var InfiniteComputer = __webpack_require__(1581),
+	    bs = __webpack_require__(1583);
 
 	var ArrayInfiniteComputer = (function (_InfiniteComputer) {
 	  _inherits(ArrayInfiniteComputer, _InfiniteComputer);
@@ -760,7 +760,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1540:
+/***/ 1583:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -809,7 +809,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1541:
+/***/ 1584:
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -861,7 +861,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1542:
+/***/ 1585:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -878,7 +878,7 @@ webpackJsonp([4],{
 
 /***/ },
 
-/***/ 1543:
+/***/ 1586:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {// This module provides a centralized place for
@@ -888,7 +888,7 @@ webpackJsonp([4],{
 	'use strict';
 
 	var React = global.React || __webpack_require__(55);
-	var _isFinite = __webpack_require__(1541);
+	var _isFinite = __webpack_require__(1584);
 
 	module.exports = function (props) {
 	  var rie = 'Invariant Violation: ';

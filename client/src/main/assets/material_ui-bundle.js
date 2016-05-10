@@ -4,7 +4,7 @@ webpackJsonp([2],[
 
 	window.mui = __webpack_require__(288);
 
-	window.mui.SvgIcons = __webpack_require__(615);
+	window.mui.SvgIcons = __webpack_require__(658);
 
 
 /***/ }

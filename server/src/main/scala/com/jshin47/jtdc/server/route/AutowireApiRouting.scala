@@ -3,7 +3,7 @@ package com.jshin47.jtdc.server.route
 import akka.http.scaladsl.server.Directives
 import akka.stream.Materializer
 import autowire.Server
-import com.jshin47.shared.serialization.{PrickleAutowireSerializationSupport, PrickleExtras}
+import com.jshin47.common.serialization.{PrickleAutowireSerializationSupport, PrickleExtras}
 import prickle.{Pickler, Unpickle, Unpickler}
 
 /**

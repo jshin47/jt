@@ -9,6 +9,7 @@ window.elemental = require("elemental");
 window.mui = require("material-ui");
 window.TreeSvg = require('d3-state-visualizer');
 window.react2tree = require('react2tree');
+window.Cellblock = require('react-cellblock');
 
 window.mui.SvgIcons = require('material-ui/lib/svg-icons/index');
 window.Bootstrap = require('bootstrap-sass');

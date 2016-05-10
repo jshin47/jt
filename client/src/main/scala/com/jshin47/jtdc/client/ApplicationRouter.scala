@@ -4,7 +4,9 @@ import japgolly.scalajs.react.extra.router._
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.prefix_<^._
 import com.jshin47.jtdc.client.module.landing.LandingLocC
+import com.jshin47.jtdc.client.style.ApplicationStyles
 import org.scalajs.dom
+import scalacss.ScalaCssReact._
 
 
 object ApplicationRouter {
@@ -21,7 +23,7 @@ object ApplicationRouter {
   }
 
   def layout(c: RouterCtl[Loc], r: Resolution[Loc]): Unit = {
-    <.div(
+    <.div()(
       r.render()
     )
   }

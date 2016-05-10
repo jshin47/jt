@@ -34,11 +34,9 @@ object DiodeStateVizC {
 
 
       import com.jshin47.jtdc.client.module.visualization.DiodeStateVizC._
-      import com.jshin47.macroz.MappableModel._
+      import com.jshin47.common.macroz.MappableModel._
       import scala.scalajs.js.JSConverters._
-      val m = props.proxy().posts.asMap.toJSDictionary
-      //val m = props.proxy().asMap.toJSDictionary
-
+      val m = props.proxy().asMap.toJSDictionary
 
       D3TreeStateVisualizerC(
         new D3TreeStateVisualizerC.Props(

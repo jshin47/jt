@@ -1,7 +1,7 @@
 package com.jshin47.jtdc.client.state
 
+import com.jshin47.common.macroz.{MappableModel}
 import com.jshin47.jtdc.dto.{Masthead, Posts}
-import com.jshin47.macroz.MappableModel
 
 
 case class ApplicationModel(

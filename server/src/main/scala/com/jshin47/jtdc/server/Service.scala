@@ -4,7 +4,7 @@ import akka.actor.ActorSystem
 import akka.http.scaladsl.server.Directives
 import akka.stream.ActorMaterializer
 import com.jshin47.jtdc.server.route._
-import com.jshin47.shared.serialization.PrickleExtras
+import com.jshin47.common.serialization.PrickleExtras
 
 /**
   * Created by justin on 5/7/16.
