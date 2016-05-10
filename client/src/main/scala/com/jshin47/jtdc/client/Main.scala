@@ -22,8 +22,8 @@ object Main extends JSApp {
   @JSExport
   override def main(): Unit = {
     // Styling bullshit
-    GlobalRegistry.addToDocumentOnRegistration()
     StyleRegistry.load()
+    GlobalRegistry.addToDocumentOnRegistration()
 
     // Init
     ApplicationCircuit.dispatch(InitializePosts)

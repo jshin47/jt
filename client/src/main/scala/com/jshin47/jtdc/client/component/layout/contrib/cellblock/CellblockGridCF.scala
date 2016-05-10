@@ -1,6 +1,7 @@
 package com.jshin47.jtdc.client.component.layout.contrib.cellblock
 
 import chandu0101.macros.tojs.JSMacro
+import com.jshin47.jtdc.client.component.ComponentUtilities
 import japgolly.scalajs.react.{React, ReactComponentU_, ReactNode}
 
 import scala.scalajs.js
@@ -16,7 +17,7 @@ case class CellblockGridCF(
                             gutterWidth:          js.UndefOr[Double]                      = js.undefined,
                             initialBreakpoint:    js.UndefOr[js.Any]                      = js.undefined,
                             onChange:             js.UndefOr[js.Function1[js.Any, Unit]]  = js.undefined,
-                            key:                  js.UndefOr[String]                      = js.undefined,
+                            key:                  js.UndefOr[String]                      = ComponentUtilities.generateKey,
                             ref:                  js.UndefOr[String]                      = js.undefined
                           ) {
   def apply(children: ReactNode*) = {

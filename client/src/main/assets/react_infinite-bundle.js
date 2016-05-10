@@ -460,11 +460,11 @@ webpackJsonp([4],{
 	'use strict';
 
 	if (!Object.assign) {
-	  Object.assign = __webpack_require__(279);
+	  Object.assign = __webpack_require__(276);
 	}
 
 	if (!Array.isArray) {
-	  Array.isArray = __webpack_require__(343);
+	  Array.isArray = __webpack_require__(340);
 	}
 
 /***/ },
