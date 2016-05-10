@@ -2,7 +2,7 @@ package com.jshin47.jtdc.dto
 
 import java.util.UUID
 
-case class PostId(id: UUID)
+case class PostId(id: UUID) extends Dto
 
 object PostId {
   def generate = new PostId(UUID.randomUUID())
@@ -10,7 +10,7 @@ object PostId {
 
 
 
-case class Post(id: PostId, author: String, title: String, content: String)
+case class Post(id: PostId, author: String, title: String, content: String) extends Dto
 
 object Post {
   def create(by: String, titled: String, content: String) =
@@ -20,7 +20,7 @@ object Post {
 
 
 
-case class Posts(postList: Seq[Post])
+case class Posts(postList: Seq[Post]) extends Dto
 
 object Posts {
 

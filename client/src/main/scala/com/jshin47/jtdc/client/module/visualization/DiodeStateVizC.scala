@@ -9,6 +9,7 @@ import scalacss.Defaults._
 import scalacss.ScalaCssReact._
 import chandu0101.scalajs.react.components.Implicits._
 import com.jshin47.jtdc.client.{ApplicationRouter, Main}
+import com.jshin47.jtdc.dto.{Masthead, Post, Posts}
 
 import scala.collection.mutable
 import scala.scalajs.js
@@ -31,6 +32,13 @@ object DiodeStateVizC {
     .noBackend
     .render_P( props ⇒ {
 
+
+      import com.jshin47.jtdc.client.module.visualization.DiodeStateVizC._
+      import com.jshin47.macroz.MappableModel._
+      import scala.scalajs.js.JSConverters._
+      val m = props.proxy().asMap.toJSDictionary
+
+
       D3TreeStateVisualizerC(
         new D3TreeStateVisualizerC.Props(
           id = "tree",
@@ -41,7 +49,7 @@ object DiodeStateVizC {
           heightBetweenNodesCoeff = 2.0,
           rootKeyName = "dd",
           //state = props.proxy().asInstanceOf[js.Object]
-          state = D3TreeStateVisualizerC.fictState
+          state = m
         )
       )
     })
