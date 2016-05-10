@@ -22,7 +22,22 @@ object DemonstrationLocC {
 
   private val component = ReactComponentB[RouterCtl[Loc]]("DemonstrationLocC")
     .render_P(ctl ⇒ {
+      StickyContainerCF()(
         CellblockGridCF()(
+          CellblockRowCF()(
+            CellblockColumnCF()(
+              <.div(
+                ^.height := "800px",
+                ^.backgroundColor := "#d2691e",
+                ^.color := "white"
+              )(
+                <.h2("watch it stick!"),
+                <.h2("stick!"),
+                <.h2("stick!")
+              )
+            )
+          ),
+          StickyCF()(
             CellblockRowCF()(
               CellblockColumnCF()(
                 <.div(
@@ -33,19 +48,21 @@ object DemonstrationLocC {
                   "Hello world!"
                 )
               )
+            )
           ),
           CellblockRowCF()(
             CellblockColumnCF(width = "1/4")(
-              <.div(
+              <.div(^.backgroundColor := "magenta")(
                 "blah blah"
               )
             ),
             CellblockColumnCF(width = "3/4")(
-              <.div(
+              <.div(^.height := "1000px", ^.backgroundColor := "cyan")(
                 "black sheep"
               )
             )
           )
+        )
       )
     })
     .build
