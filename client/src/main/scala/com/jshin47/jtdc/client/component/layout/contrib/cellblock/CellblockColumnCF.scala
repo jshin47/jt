@@ -12,7 +12,9 @@ case class CellblockColumnCF(
                               isRoot:     js.UndefOr[Boolean]               = js.undefined,
                               offset:     js.UndefOr[String]                = js.undefined,
                               viewport:   js.UndefOr[js.Array[js.Any]]      = js.undefined,
-                              width:      js.UndefOr[String]                = js.undefined
+                              width:      js.UndefOr[String]                = js.undefined,
+                              key:       js.UndefOr[String]                 = js.undefined,
+                              ref:       js.UndefOr[String]                 = js.undefined
                             ) {
 
   def apply(children: ReactNode*) = {

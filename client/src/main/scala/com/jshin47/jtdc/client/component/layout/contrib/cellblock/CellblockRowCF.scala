@@ -7,7 +7,9 @@ import scala.scalajs.js
 
 
 case class CellblockRowCF(
-                           className: String = ""
+                           className: js.UndefOr[String]        = js.undefined,
+                           key:       js.UndefOr[String]        = js.undefined,
+                           ref:       js.UndefOr[String]        = js.undefined
                          ) {
   def apply(children: ReactNode*) = {
     val props = JSMacro[CellblockRowCF](this)

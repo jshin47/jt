@@ -15,7 +15,9 @@ case class CellblockGridCF(
                             flexible:             js.UndefOr[js.Any]                      = js.undefined,
                             gutterWidth:          js.UndefOr[Double]                      = js.undefined,
                             initialBreakpoint:    js.UndefOr[js.Any]                      = js.undefined,
-                            onChange:             js.UndefOr[js.Function1[js.Any, Unit]]  = js.undefined
+                            onChange:             js.UndefOr[js.Function1[js.Any, Unit]]  = js.undefined,
+                            key:                  js.UndefOr[String]                      = js.undefined,
+                            ref:                  js.UndefOr[String]                      = js.undefined
                           ) {
   def apply(children: ReactNode*) = {
     val props = JSMacro[CellblockGridCF](this)

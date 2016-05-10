@@ -9,6 +9,9 @@ Instructions to build
   5. `sbt`
   7. In `sbt`, `server/reStart`
   
+Now we are using the Cellblock library for layouts and responsiveness. Very nice!
+![logo](https://raw.githubusercontent.com/jshin47/jt/master/screenshot4.png)
+  
 ![logo](https://raw.githubusercontent.com/jshin47/jt/master/screenshot3.png)
 ![logo](https://raw.githubusercontent.com/jshin47/jt/master/screenshot2.png)
 ![logo](https://raw.githubusercontent.com/jshin47/jt/master/screenshot1.png)
