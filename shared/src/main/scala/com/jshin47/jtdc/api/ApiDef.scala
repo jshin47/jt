@@ -7,6 +7,6 @@ import com.jshin47.jtdc.dto.{Post, PostFilter}
   */
 trait ApiDef {
 
-//  def findPosts(filter: PostFilter): Seq[Post]
+  def findPosts(filter: PostFilter): Seq[Post]
 
 }

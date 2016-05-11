@@ -34,7 +34,11 @@ package object contrib {
 
   @js.native
   @JSName("ReactEqualizer")
-  object ReactEqualizer extends js.Object
+  object ReactEqualizer extends js.Object {
+
+    val default: js.Dynamic = js.native
+
+  }
 
   @js.native
   @JSName("ReactCenter")

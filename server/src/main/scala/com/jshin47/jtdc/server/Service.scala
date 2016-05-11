@@ -18,6 +18,7 @@ class Service(implicit val system:ActorSystem, val mat: ActorMaterializer)
     with Directives
     with AutowireApiRouting
     with PrickleExtras
+    with UPickleSupport
 {
 
   val routes = allApiRoutes ~ allResRoutes ~ allSocketsRoutes ~ allRenderedRoutes

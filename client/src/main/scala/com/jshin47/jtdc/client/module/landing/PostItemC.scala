@@ -15,6 +15,7 @@ import chandu0101.scalajs.react.components.Implicits._
 import com.jshin47.jtdc.client.Loc
 import com.jshin47.jtdc.client.component.ComponentUtilities
 import com.jshin47.jtdc.client.component.layout.contrib.cellblock.{CellblockColumnCF, CellblockGridCF, CellblockRowCF}
+import com.jshin47.jtdc.client.component.layout.contrib.dim.EqualizerCF
 import com.jshin47.jtdc.dto.Post
 
 import scala.scalajs.js
@@ -79,30 +80,34 @@ object PostItemC {
         MuiPaper(zDepth = ZDepth._1, key = ComponentUtilities.generateKey, circle = false, rounded = true, transitionEnabled = false)(
           CellblockGridCF()(
             CellblockRowCF()(
-              CellblockColumnCF(width = "1/4")(
-                <.div(
-                  MuiAvatar(
-                    key = ComponentUtilities.generateKey,
-                    size = 112,
-                    color = Mui.Styles.Colors.red400,
-                    style = js.Dynamic.literal(
-                      margin  =  "auto",
-                      display = "block",
-                      padding =  "10px"
-                    )
-                  )(Mui.SvgIcons.ActionFace()())
-                )
-              ),
-              CellblockColumnCF(width = "3/4")(
-                CellblockRowCF()(
-                  <.div()(
-                    <.h3(model.title)
+              EqualizerCF(
+                property = "maxHeight"
+              )(
+                CellblockColumnCF(width = "1/4")(
+                  <.div(
+                    MuiAvatar(
+                      key = ComponentUtilities.generateKey,
+                      size = 112,
+                      color = Mui.Styles.Colors.red400,
+                      style = js.Dynamic.literal(
+                        margin  =  "auto",
+                        display = "block",
+                        padding =  "10px"
+                      )
+                    )(Mui.SvgIcons.ActionFace()())
                   )
                 ),
-                CellblockRowCF()(
-                  <.div(^.maxHeight := "80%")(
+                CellblockColumnCF(width = "3/4")(
+                  CellblockRowCF()(
                     <.div()(
-                      <.p(model.content)
+                      <.h3(model.title)
+                    )
+                  ),
+                  CellblockRowCF()(
+                    <.div(^.maxHeight := "80%")(
+                      <.div()(
+                        <.p(model.content)
+                      )
                     )
                   )
                 )

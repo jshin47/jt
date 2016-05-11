@@ -16,7 +16,7 @@ case class EqualizerCF(
 
   def apply(children: ReactNode*) = {
     val props = JSMacro[EqualizerCF](this)
-    def f = React.asInstanceOf[js.Dynamic].createFactory(ReactEqualizer)
+    def f = React.asInstanceOf[js.Dynamic].createFactory(ReactEqualizer.default)
     if (children.isEmpty) {
       f(props).asInstanceOf[ReactComponentU_]
     } else if (children.size == 1) {
