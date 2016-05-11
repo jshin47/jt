@@ -21,10 +21,8 @@ object ApplicationCircuit
   )
 
   override protected def actionHandler = composeHandlers(
-    new PostHandler(
-      zoomRW(_.posts)((m,v) ⇒ m.copy(posts = v)).zoomRW(_.postList)((m, v) ⇒ m.copy(postList = v))),
-    new MastheadHandler(
-      zoomRW(_.masthead)((m,v) ⇒ m.copy(masthead = v)))
+    new PostHandler(zoomRW(_.posts)((m,v) ⇒ m.copy(posts = v))),
+    new MastheadHandler(zoomRW(_.masthead)((m,v) ⇒ m.copy(masthead = v)))
   )
 
 }

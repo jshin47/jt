@@ -1,32 +1,14 @@
 package com.jshin47.jtdc.dto
 
+import java.time.{LocalDate, ZonedDateTime}
 import java.util.UUID
 
-case class PostId(id: UUID) extends Dto
+case class ContentItem(id: UUID) extends Dto
 
-object PostId {
-  def generate = new PostId(UUID.randomUUID())
+object ContentItem {
+  def generate = new ContentItem(UUID.randomUUID())
 }
 
-
-
-case class Post(id: PostId, author: String, title: String, content: String) extends Dto
-
-object Post {
-  def create(by: String, titled: String, content: String) =
-    Post(PostId.generate, by, titled, content)
+case class ContentItems(items: Seq[ContentItem]) extends Dto {
+  //def this(ids: Seq[String]) = this(ids.map(i ⇒ new ContentItem(UUID.fromString(i))))
 }
-
-
-
-
-case class Posts(postList: Seq[Post]) extends Dto
-
-object Posts {
-
-  implicit class PostsExt(posts: Seq[Post]) {
-    def toPosts: Posts = Posts(posts)
-  }
-
-}
-

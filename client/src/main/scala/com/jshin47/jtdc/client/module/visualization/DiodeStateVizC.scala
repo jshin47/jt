@@ -46,8 +46,7 @@ object DiodeStateVizC {
           isSorted = false,
           widthBetweenNodesCoeff = 1.5,
           heightBetweenNodesCoeff = 2.0,
-          rootKeyName = "dd",
-          //state = props.proxy().asInstanceOf[js.Object]
+          rootKeyName = "Current State",
           state = m
         )
       )

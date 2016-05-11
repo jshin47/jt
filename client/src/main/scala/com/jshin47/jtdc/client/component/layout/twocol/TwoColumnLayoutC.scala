@@ -1,8 +1,7 @@
 package com.jshin47.jtdc.client.component.layout.twocol
 
 import chandu0101.scalajs.react.components.materialui.MuiTextField
-import com.jshin47.jtdc.client.state.{AddPost, PostFilter}
-import com.jshin47.jtdc.dto.{Post, PostId, Posts}
+import com.jshin47.jtdc.dto.{Post, ContentItem, Posts}
 import diode.react.ModelProxy
 import japgolly.scalajs.react.{BackendScope, Callback}
 import japgolly.scalajs.react.extra.router.RouterCtl

@@ -1,8 +1,7 @@
 package com.jshin47.jtdc.client.module.demonstration
 
 import chandu0101.scalajs.react.components.materialui.MuiTextField
-import com.jshin47.jtdc.client.state.{AddPost, PostFilter}
-import com.jshin47.jtdc.dto.{Post, PostId, Posts}
+import com.jshin47.jtdc.dto.{Post, ContentItem, Posts}
 import diode.react.ModelProxy
 import japgolly.scalajs.react.{BackendScope, Callback}
 import japgolly.scalajs.react.extra.router.RouterCtl
@@ -18,7 +17,7 @@ import com.jshin47.jtdc.client.Loc
 import com.jshin47.jtdc.client.component.layout.contrib.cellblock.{CellblockColumnCF, CellblockGridCF, CellblockRowCF}
 import com.jshin47.jtdc.client.component.layout.contrib.stickyheader.{StickyCF, StickyContainerCF}
 
-object DemonstrationLocC {
+object DemonstrationC {
 
   private val component = ReactComponentB[RouterCtl[Loc]]("DemonstrationLocC")
     .render_P(ctl ⇒ {

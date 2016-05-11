@@ -17,7 +17,7 @@ import com.jshin47.jtdc.client.module.visualization.{D3TreeStateVisualizerC, Dio
 
 import scalacss.ScalaCssReact._
 
-object LandingLocC {
+object LandingC {
 
   private val component = ReactComponentB[RouterCtl[Loc]]("LandingLocation")
     .render_P(ctl ⇒ {

@@ -3,11 +3,11 @@ package com.jshin47.jtdc.client
 import java.util.regex.Pattern
 
 import com.jshin47.jtdc.client.component.layout.parallax.ParallaxContainerC
-import com.jshin47.jtdc.client.module.demonstration.DemonstrationLocC
+import com.jshin47.jtdc.client.module.demonstration.DemonstrationC
 import japgolly.scalajs.react.extra.router._
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.prefix_<^._
-import com.jshin47.jtdc.client.module.landing.{FourOhFourC, LandingLocC}
+import com.jshin47.jtdc.client.module.landing.{FourOhFourC, LandingC}
 import com.jshin47.jtdc.client.style.ApplicationStyles
 import org.scalajs.dom
 
@@ -33,8 +33,8 @@ object ApplicationRouter {
 
     (removeTrailingSlashes
       //| staticRedirect(root) ~> redirectToPage(LandingLoc)(Redirect.Replace)
-      | staticRoute(formatRouteName(LandingLoc), LandingLoc) ~> renderR(ctl ⇒ LandingLocC(ctl))
-      | staticRoute(formatRouteName(DemonstrationLoc), DemonstrationLoc) ~> renderR(ctl ⇒ DemonstrationLocC(ctl))
+      | staticRoute(formatRouteName(LandingLoc), LandingLoc) ~> renderR(ctl ⇒ LandingC(ctl))
+      | staticRoute(formatRouteName(DemonstrationLoc), DemonstrationLoc) ~> renderR(ctl ⇒ DemonstrationC(ctl))
       | staticRoute(formatRouteName(Error_404_Loc), Error_404_Loc) ~> renderR(ctl ⇒ ParallaxContainerC())
       | staticRedirect("#404") ~> redirectToPage(Error_404_Loc)(Redirect.Replace)
     ).notFound(redirectToPage(Error_404_Loc)(Redirect.Replace))
