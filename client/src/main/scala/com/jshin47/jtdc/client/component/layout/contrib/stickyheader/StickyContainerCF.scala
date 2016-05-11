@@ -2,6 +2,7 @@ package com.jshin47.jtdc.client.component.layout.contrib.stickyheader
 
 import chandu0101.macros.tojs.JSMacro
 import com.jshin47.jtdc.client.component.ComponentUtilities
+import com.jshin47.jtdc.client.component.layout.contrib.ReactSticky
 import japgolly.scalajs.react.{React, ReactChildren, ReactComponentU_, ReactNode}
 
 import scala.scalajs.js

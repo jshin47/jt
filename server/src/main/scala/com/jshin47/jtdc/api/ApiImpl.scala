@@ -18,7 +18,7 @@ class ApiImpl extends ApiDef {
 
   val postFactory: () ⇒ Post =
     () ⇒ Post.create(
-      authors(Random.nextInt(authors.length)),
+      authors(Random.nextInt(authors.length + 1)),
       Random.nextString(Random.nextInt(1000)),
       Random.nextString(Random.nextInt(10000))
     )

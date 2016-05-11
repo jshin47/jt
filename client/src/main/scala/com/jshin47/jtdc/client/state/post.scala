@@ -9,7 +9,7 @@ case class FindPosts(filter: PostFilter, potResult: Pot[Posts]) extends PotActio
     FindPosts(filter, potResult)
 }
 
-case class RefreshPost(oldPost: Post, potResult: Pot[Post]) extends PotAction[Posts, RefreshPost] with Cmd {
-  override def next(newResult: Pot[Posts]): RefreshPost =
+case class RefreshPost(oldPost: Post, potResult: Pot[Post]) extends PotAction[Post, RefreshPost] with Cmd {
+  override def next(newResult: Pot[Post]): RefreshPost =
     RefreshPost(oldPost, potResult)
 }

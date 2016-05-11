@@ -10,7 +10,7 @@ import japgolly.scalajs.react.vdom.prefix_<^._
 import org.scalajs.dom.ext.KeyCode
 import chandu0101.scalajs.react.components.Implicits._
 import com.jshin47.jtdc.client.Loc
-import com.jshin47.jtdc.client.component.layout.contrib.cellblock.{Cellblock, CellblockColumnCF, CellblockGridCF, CellblockRowCF}
+import com.jshin47.jtdc.client.component.layout.contrib.cellblock.{CellblockColumnCF, CellblockGridCF, CellblockRowCF}
 import com.jshin47.jtdc.client.component.masthead.MastheadC
 import com.jshin47.jtdc.client.module.visualization.{D3TreeStateVisualizerC, DiodeStateVizC}
 

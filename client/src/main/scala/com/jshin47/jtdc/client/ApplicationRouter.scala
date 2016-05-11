@@ -7,7 +7,8 @@ import com.jshin47.jtdc.client.module.demonstration.DemonstrationC
 import japgolly.scalajs.react.extra.router._
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.prefix_<^._
-import com.jshin47.jtdc.client.module.landing.{FourOhFourC, LandingC}
+import com.jshin47.jtdc.client.module.landing.{FourOhFourC, LandingC, PostListingC}
+import com.jshin47.jtdc.client.state.{ApplicationCircuit, ApplicationModel}
 import com.jshin47.jtdc.client.style.ApplicationStyles
 import org.scalajs.dom
 
@@ -33,11 +34,12 @@ object ApplicationRouter {
 
     (removeTrailingSlashes
       //| staticRedirect(root) ~> redirectToPage(LandingLoc)(Redirect.Replace)
-      | staticRoute(formatRouteName(LandingLoc), LandingLoc) ~> renderR(ctl ⇒ LandingC(ctl))
+      | staticRoute(formatRouteName(LandingLoc),             LandingLoc) ~> renderR(ctl ⇒ LandingC(ctl))
+      | staticRoute(formatRouteName(PostListingLoc),     PostListingLoc) ~> renderR(ctl ⇒ PostListingC(PostListingC.Props(ApplicationCircuit.zoom(_.posts).value, PostListingC.LayoutHorizontal)))
       | staticRoute(formatRouteName(DemonstrationLoc), DemonstrationLoc) ~> renderR(ctl ⇒ DemonstrationC(ctl))
-      | staticRoute(formatRouteName(Error_404_Loc), Error_404_Loc) ~> renderR(ctl ⇒ ParallaxContainerC())
-      | staticRedirect("#404") ~> redirectToPage(Error_404_Loc)(Redirect.Replace)
-    ).notFound(redirectToPage(Error_404_Loc)(Redirect.Replace))
+      | staticRoute(formatRouteName(Error_404_Loc),       Error_404_Loc) ~> renderR(ctl ⇒ ParallaxContainerC())
+      | staticRedirect("#404")                                           ~> redirectToPage(Error_404_Loc)(Redirect.Replace)
+    ).notFound(                                                             redirectToPage(Error_404_Loc)(Redirect.Replace))
      .logToConsole
      .renderWith { (ctl, res) ⇒
        <.div(res.render())

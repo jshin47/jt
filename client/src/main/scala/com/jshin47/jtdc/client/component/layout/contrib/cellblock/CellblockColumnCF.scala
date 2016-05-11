@@ -4,6 +4,7 @@ import java.util.UUID
 
 import chandu0101.macros.tojs.JSMacro
 import com.jshin47.jtdc.client.component.ComponentUtilities
+import com.jshin47.jtdc.client.component.layout.contrib.Cellblock
 import japgolly.scalajs.react.{React, ReactComponentU_, ReactNode}
 
 import scala.scalajs.js

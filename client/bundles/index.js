@@ -14,6 +14,12 @@ window.Arsenic = require('arsenic');
 window.ReactParallax = require('react-parallax');
 window.skrollr = require('skrollr');
 window.skrollrss = require('skrollr-stylesheets');
+window.ReactEqualizer = require('react-equalizer');
+window.ReactDotDotDot = require('react-dotdotdot');
+window.ReactTextTruncate = require('react-text-truncate');
+window.ReactCenter = require('react-center');
+window.ReactParallaxComponent = require('react-parallax-component');
+window.FitText = require('react-fittext');
 
 window.mui.SvgIcons = require('material-ui/lib/svg-icons/index');
 window.Bootstrap = require('bootstrap-sass');

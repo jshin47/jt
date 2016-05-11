@@ -2,7 +2,8 @@ package com.jshin47.jtdc.client.state
 
 import com.jshin47.jtdc.client.state.handler.{MastheadHandler, PostHandler}
 import com.jshin47.jtdc.client.state.processor.DiodeLogger
-import com.jshin47.jtdc.dto.{Masthead, NavigationItems, Posts}
+import com.jshin47.jtdc.dto.{Masthead, NavigationItems, Post, Posts}
+import com.jshin47.random.RandomDataFromNowhere
 import diode.{ActionResult, Circuit}
 import diode.react.ReactConnector
 
@@ -16,7 +17,7 @@ object ApplicationCircuit
   addProcessor(new DiodeLogger[ApplicationModel]())
 
   override protected def initialModel: ApplicationModel = ApplicationModel(
-    Posts(Seq()),
+    Posts(RandomDataFromNowhere.postsData),
     Masthead(NavigationItems(Seq()), "JustinTampa", "JustinTampa.com", active = false)
   )
 
